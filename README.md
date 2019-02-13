@@ -1,7 +1,7 @@
 # Telcom-Customer-Churn
 實作並視覺化評估多個機器學習模型：
 探索性資料分析、生成資料、建立機器學習模型、特徵選擇、模型評估。
-網頁版 [jupyternotebook](https://nbviewer.jupyter.org/github/JHL01/Finding-Donors-for-CharityML/blob/master/%E5%B0%8B%E6%89%BE%E6%BD%9B%E5%9C%A8%E6%8D%90%E5%8A%A9%E8%80%85%28Finding%20Donors%20for%20CharityML%29.ipynb)
+網頁版 [jupyternotebook](https://nbviewer.jupyter.org/github/JHL01/Telcom-Customer-Churn/blob/master/%E9%9B%BB%E4%BF%A1%E5%AE%A2%E6%88%B6%E6%B5%81%E5%A4%B1%28Telco%20Customer%20Churn%29.ipynb)
 
 >### 運作環境：
 - Python version == 3.6.4
