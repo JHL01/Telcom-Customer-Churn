@@ -1,5 +1,5 @@
 # Telcom-Customer-Churn
-實作9種不同的機器學習模型並視覺化評估過程及特徵重要性：包含探索性資料分析、生成資料、建立機器學習模型、特徵選擇、模型評估。網頁版 [jupyternotebook](https://nbviewer.jupyter.org/github/JHL01/Telcom-Customer-Churn/blob/master/%E9%9B%BB%E4%BF%A1%E5%AE%A2%E6%88%B6%E6%B5%81%E5%A4%B1%28Telco%20Customer%20Churn%29.ipynb)
+實作9種不同的機器學習模型並視覺化評估過程及特徵重要性：包含探索性資料分析、生成資料、建立機器學習模型、特徵選擇及模型評估。網頁版 [jupyternotebook](https://nbviewer.jupyter.org/github/JHL01/Telcom-Customer-Churn/blob/master/%E9%9B%BB%E4%BF%A1%E5%AE%A2%E6%88%B6%E6%B5%81%E5%A4%B1%28Telco%20Customer%20Churn%29.ipynb)
 
 >### 運作環境：
 - Python version == 3.6.4
