@@ -1,5 +1,5 @@
 # Telcom-Customer-Churn
-實作9種不同的機器學習模型並視覺化評估過程及特徵重要性：包含探索性資料分析、生成資料、建立機器學習模型、特徵選擇及模型評估。網頁版 [jupyternotebook](https://nbviewer.jupyter.org/github/JHL01/Telcom-Customer-Churn/blob/master/%E9%9B%BB%E4%BF%A1%E5%AE%A2%E6%88%B6%E6%B5%81%E5%A4%B1%28Telco%20Customer%20Churn%29.ipynb)
+訓練並視覺化評估 9 種不同的機器學習模型：包含探索性資料分析、不平衡資料處理、建立模型、特徵選擇及模型評估。網頁版 [jupyternotebook](https://nbviewer.jupyter.org/github/JHL01/Telcom-Customer-Churn/blob/master/%E9%9B%BB%E4%BF%A1%E5%AE%A2%E6%88%B6%E6%B5%81%E5%A4%B1%28Telco%20Customer%20Churn%29.ipynb)
 
 >### 運作環境：
 - Python version == 3.6.4
@@ -16,3 +16,9 @@
 
 >### 方法概述：
 首先使用探索性資料分析了解各個特徵與流失率的關係，再使用 Scikit-learn 實現 9 種不同算法。其中，由於資料集存在不平衡目標特徵，因此利用生成特徵(SMOTE)加強模型泛化能力與特徵選擇(RFE)嘗試使用較少特徵預測，最後透過學習曲線、混淆矩陣及 ROC 曲線評估模型。
+
+>### 主要發現：
+- 使用 SMOTE 後的樣本於 Logistic Regression 進行預測，結果顯示 AUC 從 70.9% 上升至 75.5% ，明顯增加泛化能力。
+- 使用 RFE 於 Logistic Regression 時，結果顯示僅使用前 13 個重要特徵時，預測表現與使用所有特徵時接近，表示其餘 8 個特徵提供資訊有限。
+- 在不特別調整參數的情況下， Logistic Regression 與 Random Forest 的預測準確度(AUC 及 F-score)最佳，此外，較複雜的模型都有 overfitting 的問題(LGBM Classifier、XGB Classifier 及 MLPClassifier)，顯示在較小的資料集中不需使用複雜的模型。
+- 往來時間越長、兩年合約、使用信用卡自動扣款繳費的客人流失率較低；使用紙本帳單、按月合約、總收取金額高的客人流失率較高。
